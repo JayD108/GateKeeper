@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base GateKeeper theme — high contrast, large text, elder-friendly -->
+    <style name="Theme.GateKeeper" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#1565C0</item>
+        <item name="colorPrimaryVariant">#0D47A1</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#FF6F00</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#212121</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- Alarm theme — dark background for maximum contrast -->
+    <style name="Theme.GateKeeper.Alarm" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:colorBackground">#B71C1C</item>
+        <item name="android:windowBackground">@color/alarm_bg</item>
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorOnPrimary">#B71C1C</item>
+    </style>
+
+    <!-- Large button style for 50+ users -->
+    <style name="Widget.GateKeeper.Button.Large" parent="Widget.Material3.Button">
+        <item name="android:textSize">24sp</item>
+        <item name="android:minHeight">80dp</item>
+        <item name="android:padding">24dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+
+    <!-- Giant alarm acknowledgment button -->
+    <style name="Widget.GateKeeper.Button.Alarm" parent="Widget.Material3.Button">
+        <item name="android:textSize">32sp</item>
+        <item name="android:minHeight">120dp</item>
+        <item name="android:padding">32dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="backgroundTint">#2E7D32</item>
+        <item name="cornerRadius">24dp</item>
+    </style>
+</resources>
+

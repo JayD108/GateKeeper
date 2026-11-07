@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alarm_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <!-- Pulsing alarm icon -->
+        <TextView
+            android:id="@+id/tvAlarmIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚨"
+            android:textSize="80sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvAlarmTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alarm_title"
+            android:textSize="@dimen/text_xlarge"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvAlarmSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alarm_subtitle"
+            android:textSize="@dimen/text_large"
+            android:textColor="#FFCDD2"
+            android:gravity="center"
+            android:layout_marginBottom="48dp" />
+
+        <!-- GIANT acknowledge button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAcknowledge"
+            style="@style/Widget.GateKeeper.Button.Alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_acknowledge"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/alarm_button_green"
+            app:rippleColor="#81C784" />
+
+    </LinearLayout>
+
+</FrameLayout>
+
