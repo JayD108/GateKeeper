@@ -42,3 +42,20 @@ The app is side-loaded instead of published on Google Play, because of Play's re
 - [Problem breakdown](problem.md)
 - [Product requirements](prd.md)
 - [Build plan](plan.md)
+
+## Project structure
+
+```
+app/src/main/java/com/gatekeeper/   Kotlin source
+app/src/main/res/                   layouts, icons, resources
+build.gradle.kts, settings.gradle.kts, gradle.properties
+problem.md, prd.md, plan.md         design documents
+```
+
+## Author
+
+Mrittunjay Dubey, GitHub [@JayD108](https://github.com/JayD108)
+
+## License
+
+No license file is included yet, so all rights are reserved by default.
